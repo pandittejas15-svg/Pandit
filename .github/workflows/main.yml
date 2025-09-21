@@ -1,0 +1,34 @@
+Started by an SCM change
+ as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building on the built-in node in workspace /var/lib/jenkins/workspace/freerdp-nightly-windows
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUPRunning] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/FreeRDP/FreeRDP
+ > git init /var/lib/jenkins/workspace/freerdp-nightly-windows/source # timeout=10
+Fetching upstream changes from https://github.com/FreeRDP/FreeRDP
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/FreeRDP/FreeRDP +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/FreeRDP/FreeRDP # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 1d56a429a5e12e0d272c773880c474a0bcb3a6ea (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1d56a429a5e12e0d272c773880c474a0bcb3a6ea # timeout=10
+Commit message: "Merge pull request #11871 from akallabeth/android-deps"
+ > git rev-list --no-walk ef6db048efa88472cdb244cd2cf15b07124adf3e # timeout=10
+Triggering freerdp-nightly-windows » win64,vs2017
+Triggering freerdp-nightly-windows » win32,vs2017
+freerdp-nightly-windows » win64,vs2017 completed with result SUCCESS
+freerdp-nightly-windows » win32,vs2017 completed with result SUCCESS
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS
